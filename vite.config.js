@@ -13,5 +13,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/F2E-Payment/dist/'
+  base: process.env.NODE_ENV === 'production' ? '/F2E-Payment/' : '/',
 });

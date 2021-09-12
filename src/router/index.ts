@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Step1 from '../views/Step1.vue';
 import Step2CreditCard from '../views/Step2CreditCard.vue';
 import Step2WebAtm from '../views/Step2WebAtm.vue';
@@ -7,7 +7,7 @@ import Step3Finish from '../views/Step3Finish.vue';
 import Step3ShopFinish from '../views/Step3ShopFinish.vue';
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
